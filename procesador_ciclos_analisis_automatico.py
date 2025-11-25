@@ -63,10 +63,10 @@ un_solo_fondo=1
 resto_fondo=1
 templog = 1
 N_espiras_bob_captora=1
-nombre='*LB97OH+VS55%15'
+nombre='*LB100CP+VS55%15'
 Analisis_de_Fourier = 1 # sobre las señales, imprime espectro de señal muestra
 N_armonicos_impares = 7
-concentracion =(1.72)*1e3 #[concentracion]= g/m^3 (1 g/l == 1e3 g/m^3) (Default = 10000 g/m^3)
+concentracion =(1.5)*1e3 #[concentracion]= g/m^3 (1 g/l == 1e3 g/m^3) (Default = 10000 g/m^3)
 capsula_glucosa=0   # capsula para solventes organicos
 detector_ciclos_descartables=True #en funcion a Mag max para evitar guardar/promediar con ciclos in/out
 Ciclo_promedio=1
@@ -689,7 +689,7 @@ fnames_m=np.array(fnames_m)
 
 if detector_ciclos_descartables:
     archivos_in_out=7
-    porcentaje_diferencia=50#%
+    porcentaje_diferencia=70#%
     print(f'Se identifican archivos cuya Mag maxima difieren un {porcentaje_diferencia}% de la')
     print(f'Mag max promedio = {np.mean(Mag_max[archivos_in_out:-archivos_in_out]):.0f}({np.std(Mag_max[archivos_in_out:-archivos_in_out]):.0f}) A/m de los {len(Mag_max[archivos_in_out:-archivos_in_out])} valores centrales.')
 
